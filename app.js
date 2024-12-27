@@ -5,21 +5,29 @@ console.log('run...');
 // 
 
 //#1 -- For loop in Javascript.
-const nemo = ['nemo'];
-const large = new Array(200).fill('nemo');
+// const nemo = ['nemo'];
+// const large = new Array(200).fill('nemo');
 
-function findNemo1(array) {
-  // let t0 = performance.now(), t1;
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === 'nemo') {
-      console.log('Found NEMO!');
-    }
-  }
+// function findNemo1(array) {
+//   // let t0 = performance.now(), t1;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === 'nemo') {
+//       console.log('Found NEMO!');
+//     }
+//   }
 
-  // t1 = performance.now();
-  // console.log(`Call to find Nemo took ${t1 - t0} ms.`);
+//   // t1 = performance.now();
+//   // console.log(`Call to find Nemo took ${t1 - t0} ms.`);
+// }
+
+// findNemo1(nemo);
+// findNemo1(large); // O(n) ---> Linear Time
+
+const boxes = [0,1,2,3,4,5];
+
+function logFirstTwoBoxes(boxes) {
+  console.log(boxes[0]); // O(1)
+  console.log(boxes[1]); // O(1)
 }
 
-findNemo1(nemo);
-findNemo1(large); // O(n) ---> Linear Time
-
+logFirstTwoBoxes(boxes); // overally O(1) ---> Constant Time
