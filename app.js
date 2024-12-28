@@ -2,7 +2,7 @@ console.log('run...');
 // Good code should be 1. readable 2. scalable
 // Big O is a way to measure the time complexity and/or the number of operations and space complexity of a program, inorder to assess
 // code scalability and algorithmic efficiency
-// 
+//
 
 //#1 -- For loop in Javascript.
 // const nemo = ['nemo'];
@@ -23,17 +23,27 @@ console.log('run...');
 // findNemo1(nemo);
 // findNemo1(large); // O(n) ---> Linear Time
 
-const boxes = [0,1,2,3,4,5];
+const boxes = [1, 2, 3, 4, 5];
 
-function logFirstTwoBoxes(boxes) {
-  console.log(boxes[0]); // O(1)
-  console.log(boxes[1]); // O(1)
-}
+// function logFirstTwoBoxes(boxes) {
+//   console.log(boxes[0]); // O(1)
+//   console.log(boxes[1]); // O(1)
+// }
 
-logFirstTwoBoxes(boxes); // overally O(1) ---> Constant Time
+//logFirstTwoBoxes(boxes); // overally O(1) ---> Constant Time
 
 // Big O Rules
 // 1. Worst case
 // 2. Drop constants
 // 3. Different terms for inputs
 // 4. Drop non determinants
+
+function logAllPairsOfArray(boxes) {
+	for (let i = 0; i < boxes.length; i++) {
+		for (let j = 0; j < boxes.length; j++) {
+			console.log(`${boxes[i]},${boxes[j]}`);
+		}
+	}
+}
+
+logAllPairsOfArray(boxes); //O(n^2) ---> Quadratic Time
