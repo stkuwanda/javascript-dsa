@@ -36,7 +36,7 @@ const boxes = [1, 2, 3, 4, 5];
 // 1. Worst case
 // 2. Drop constants
 // 3. Different terms for inputs
-// 4. Drop non determinants
+// 4. Drop non dominants
 
 function logAllPairsOfArray(boxes) {
 	for (let i = 0; i < boxes.length; i++) {
