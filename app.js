@@ -48,18 +48,25 @@ const boxes = [1, 2, 3, 4, 5];
 
 // logAllPairsOfArray(boxes); // O(n^2) ---> Quadratic Time
 
-function printAllNumbersThenAllPairSums(numbers) {
-  console.log("these are the numbers:");// O(1)
-  numbers.forEach(function(number) {
-    console.log(number);
-  });// O(n)
+// function printAllNumbersThenAllPairSums(numbers) {
+//   console.log("these are the numbers:");// O(1)
+//   numbers.forEach(function(number) {
+//     console.log(number);
+//   });// O(n)
 
-  console.log("and these are their sums:");
-  numbers.forEach(function(firstNumber) {
-    numbers.forEach(function(secondNumber) {
-      console.log(firstNumber + secondNumber);
-    });
-  });// O(n^2)
-}
+//   console.log("and these are their sums:");
+//   numbers.forEach(function(firstNumber) {
+//     numbers.forEach(function(secondNumber) {
+//       console.log(firstNumber + secondNumber);
+//     });
+//   });// O(n^2)
+// }
 
-printAllNumbersThenAllPairSums([1, 2, 3, 4, 5]); // O(n^2) by dropping non-dominants
+// printAllNumbersThenAllPairSums([1, 2, 3, 4, 5]); // O(n^2) by dropping non-dominants
+
+function nFacRuntimeFunc(n) {
+  for(let i = 0; i < n; i++) {
+    nFacRuntimeFunc(n-1);
+  }
+}// O(n!) ---> Factorial Time (not ideal) It means we're adding a nested loop for every input we have
+
