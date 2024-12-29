@@ -81,3 +81,27 @@ function nFacRuntimeFunc(n) {
 // Sometimes there are trade-offs were improving time complexity may
 // compromise space complexity and vice-versa
 
+// Space Complexity
+// -What causes Space complexity?
+//  1. Variables
+//  2. Data Structures
+//  3. Function Calls
+//  4. Allocations
+
+function boooo(n) {
+  for (let i = 0; i < n; i++) {
+    console.log("booooo");
+  }
+}// O(1) ---> Constant space complexity
+
+
+function arrayOfHiNTimes(n) {
+  var hiArray = [];
+  for (let i = 0; i < n; i++) {
+    hiArray[i] = "hi";
+  }
+  return hiArray;
+}// O(n) ---> Linear space complexity
+
+arrayOfHiNTimes(6);
+
