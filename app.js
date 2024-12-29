@@ -70,3 +70,14 @@ function nFacRuntimeFunc(n) {
   }
 }// O(n!) ---> Factorial Time (not ideal) It means we're adding a nested loop for every input we have
 
+// Good code must be
+// 1. Readable
+// 2. Scalable
+//      a. Time Complexity
+//           i.Execution speed
+//           ii. Number of operations
+//      b. Space Complexity
+//           1. Efficient usage of memory
+// Sometimes there are trade-offs were improving time complexity may
+// compromise space complexity and vice-versa
+
